@@ -1,67 +1,49 @@
-.deviceProject {
+.card {
   position: relative;
-  height: 200px;
-  z-index: 2;
-
+  max-width: 340px;
+  height: 260px;
+  background-color: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  border-radius: 15px;
 }
 
-.imgTablet {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-160%, -20%);
-  width: 40%;
-  height: 90%;
+.card:hover {
+  height: 415px;
 }
 
-.imgSmartphone {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-380%, 10%);
-  width: 20%;
-  height: 70%;
+.card .image {
+  position: relative;
+  width: 290px;
+  height: 290px;
+  border-radius: 15px;
+  top: 0;
+  left: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
-
-.box {
-  position: relative;
-}
-
-.box:hover .content {
-  transform: translate(95%);
-}
-
-.backBox {
-  position: absolute;
-  top: 0;
-  left: -15%;
-  box-shadow: 0 2.8px 16px rgba(0, 0, 0, 0.056),
-  0 6.7px 16px rgba(0, 0, 0, 0.081), 0 12.5px 10px rgba(0, 0, 0, 0.1),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.119);
-  background-color: #fff;
-  width: 450px;
-  height: 270px;
-  z-index: 1;
-  border-radius: 5px;
-}
-
 
 .content {
-  position: absolute;
-  top: 0;
-  left: -13%;
-  width: 450px;
-  height: 270px;
-  padding: 1.5rem;
-  padding-top: 10px;
-  background-color: #fff;
-  z-index: -1;
-  transition: 0.5s ease-in-out;
-  border-radius: 5px;
-  box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.644);
+  position: relative;
+  top: -80px;
+  padding: 10px 15px;
+  color: #111;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
 
+.card:hover .content {
+  margin-top: 80px;
+  visibility: visible;
+  opacity: 1;
 }
