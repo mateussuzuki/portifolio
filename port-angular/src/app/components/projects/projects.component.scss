@@ -1,3 +1,5 @@
+
+
 .card {
   position: relative;
   max-width: 340px;
@@ -19,7 +21,7 @@
 .card .image {
   position: relative;
   width: 290px;
-  height: 290px;
+  max-height: 290px;
   border-radius: 15px;
   top: 0;
   left: 8px;
@@ -28,14 +30,14 @@
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .content {
   position: relative;
   top: -80px;
   padding: 10px 15px;
-  color: #111;
+  color: #000;
   text-align: center;
   visibility: hidden;
   opacity: 0;
@@ -46,4 +48,22 @@ img {
   margin-top: 80px;
   visibility: visible;
   opacity: 1;
+}
+
+@media(max-width:768px) {
+
+  .card {
+    height: 415px;
+  }
+
+  .card:hover .content {
+    margin-top: 0px;
+  }
+
+  .content {
+    visibility: visible;
+    opacity: 1;
+    top: 0px;
+  }
+
 }
