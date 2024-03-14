@@ -1,7 +1,11 @@
+* {
+  color: white;
+}
 
 .screen {
   height: 50vh;
-  background-color: rgba(253, 252, 252, 0.753);
+  background: rgb(199,192,209);
+  background: radial-gradient(circle, rgb(105, 82, 141) 0%, rgba(57, 21, 100, 0.911) 100%);
 }
 
 h1 {
@@ -10,11 +14,27 @@ h1 {
 
 i {
   font-size: 2em;
-  margin: 15px;
 }
 
 p {
   font-size: 1.3em;
+}
+
+a {
+  padding-inline: 10px;
+}
+
+.bi {
+  cursor: pointer;
+}
+
+.socialMedia:hover {
+  transform: translateY(-10px);
+}
+
+.socialMedia {
+  padding: 0;
+  transition: 0.5s ease-in-out;
 }
 
 @media(max-width: 768px) {
