@@ -1,7 +1,6 @@
 .screen {
   height: 50vh;
-  // background: linear-gradient(0deg, rgba(120,34,195,0.4458158263305322) 0%, rgba(44, 80, 158, 0.412) 100%);
-  background: linear-gradient(0deg, rgba(45,112,253,0.41220238095238093) 0%, rgba(120,34,195,0.4458158263305322) 100%);
+  background: linear-gradient(0deg, rgba(45, 112, 253, 0.41220238095238093) 0%, rgba(120, 34, 195, 0.4458158263305322) 100%);
 }
 
 .card {
@@ -16,8 +15,7 @@
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in-out;
   border-radius: 15px;
-  // background: radial-gradient(circle, rgb(83, 68, 100) 0%, rgb(73, 54, 94) 30%, rgba(10, 0, 24, 0.87) 100%);
-  background: linear-gradient(0deg, rgba(45,112,253,0.41220238095238093) 0%, rgba(120,34,195,0.4458158263305322) 100%);
+  background: linear-gradient(0deg, rgba(45, 112, 253, 0.41220238095238093) 0%, rgba(120, 34, 195, 0.4458158263305322) 100%);
 }
 
 .card:hover {
@@ -48,7 +46,7 @@ img {
   visibility: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
-  
+
 }
 
 h2,
